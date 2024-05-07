@@ -3,7 +3,7 @@ import tmdbEndpoints from "./tmdb.endpoints.js";
 
 const tmdbApi = {
   mediaList: async ({ mediaType, mediaCategory, page }) => await axiosClient.get(
-    tmdbEndpoints.mediaList({ mediaType, mediaCategory, page })
+    tmdbEndpoints.mediaList({ mediaType, mediaCategory, page })  
   ),
   mediaDetail: async ({ mediaType, mediaId }) => await axiosClient.get(
     tmdbEndpoints.mediaDetail({ mediaType, mediaId })
